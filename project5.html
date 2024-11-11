@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang=en>
+	<!-- this is the base html file for a layout for a single project page -->
+	<!-- it uses simpleGrid as an underlying responsive grid over 12 columns -->
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+		<!-- change the title here to suite the project you are showcasing -->
+		<title>CREATIVE CODE</title>
+
+		<!-- change the following if you are using a different google fonts combination -->
+		<!-- here we are using Open Sans & Roboto -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Ledger&display=swap" rel="stylesheet">
+
+		<!-- this is a link the the stylesheet -->
+		<!-- the style sheet is also commented where you could make changes -->
+		<link rel="stylesheet" href="styles.css">
+		
+		<style>
+        img {
+            cursor: pointer;
+            max-width: 100%; /* Makes sure the image is responsive */
+        }
+    </style>
+		
+		<!-- FAVICON!!!-->
+		<link rel="icon" href="img/favicon.png">
+		
+	</head>
+	
+		<body style="background-color: white">
+		
+		  <!-- PURPLE HEADER BAR -->
+		 <div class="row">
+		<div class="header-bar-1">
+		
+	    <a href="index.html">ds✧</a> 
+			
+         <div class="header-bar-2">
+			 
+		
+	    <a href="https://x.com/artofdansan" target="_blank">X</a>
+        <a href="https://www.tumblr.com/artofdansan" target="_blank">Tumblr</a>
+        <a href="" target="_blank">Insta</a>
+	</div>
+			</div>
+	</div>
+
+			  
+			
+		<!-- the container must surround all of the content within your grid -->
+    <div class="container">
+     <div class="row-container">
+			<!-- each set of columns (adding up to 12) must be in a row -->
+			<div class="row">
+
+				<!-- define columns using a class="col-x" where x is between 1 & 12 -->
+				<!-- the total of all col-x in a row must equal 12 -->
+				<!-- our first row contains a colum of full witdh of 12 -->
+				<!-- it will contain a title and a hero image -->
+			<div class = "col-12">
+				<div class="center">
+					<h1>CREATIVE CODE</h1>
+				</div>
+				</div>
+				
+			<div class="container">
+				<div class="container">
+					<div class="center">
+		<img id="clickableImage" src="img/uncut.png" alt="Click to change"/>
+					<h2> CLICK ME!! ▲</h2>
+					</div>
+</div> 
+			</div> 
+
+    <script>
+        // JavaScript to change image on click
+        document.getElementById("clickableImage").addEventListener("click", function() {
+            // Define both image sources
+            const image1 = "img/uncut.png";
+            const image2 = "img/cut.png";
+
+            // Change the image source on click
+            this.src = this.src.includes(image1) ? image2 : image1;
+        });
+    </script>
+				
+				
+				
+				<!-- we will now add a new row and some columns with content -->
+				<div class="row">
+				<div class="col-12">
+				<div class="center">
+					<!-- a descriptive paragraph -->
+					
+					<p>Here, I explored creative coding for the first time by using p5.js to create an interactive tomato image. The concept is pretty simple but effective: when the user is clicking on the image, the tomato switches into a sliced version (In this web display it's just when you click once, not holding down). This interactive piece gave me a chance to think about design in a whole new way, where the image is shaped by words, not actions. While it eliminates the possibility of being distinct and unpredictable in the way traditional art is, it’s just as rewarding with some problem solving involved. 
+					</p><p>Throughout this project’s workshop, I found myself appreciating how every single line influenced the final image, and how I could pretty easily pinpoint exactly where my issues were. I went through a few rounds of refining the positions of slices and the colours of everything to make the image easy to comprehend. Experimenting with each line and seeing how it played out on the screen was both challenging and enjoyable, as I learned how powerful simple code can be in creating engaging visuals.
+						</p><p>This method of design can definitely be a bit finnicky, as discussed with others a bit after the workshop, but with a slight background in HTML wasn’t all too hard to pick up. Even with prior interest in interactive art, the experience really changed the way I think about it and makes me wonder what other mediums or ideas can be combined. I think there's something really cool about knowing I’m in control of both the design and the interaction, digitally handing my knife off to the user, in a way.
+						</p><p>Honestly, I didn’t really expect the coding process to be as fun as it was, making it another project I’m sure I’ll iterate on further, or at least delve deeper into for new projects.
+</p>
+			 <!-- closing col-8 DIV -->
+			</div> <!-- closing row DIV -->
+			</div>
+			</div>
+		
+
+
+				</div> 
+			
+
+			
+			<div class="row">
+				<div class = "col-12">
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					
+					<p class="center">Dansan Art Of 2024</p>
+				</div> <!-- closing col-12 DIV -->
+			</div> <!-- closing row DIV -->
+		</div>
+			</div>
+  </body>
+</html>

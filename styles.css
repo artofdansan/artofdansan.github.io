@@ -1,0 +1,486 @@
+/* This CSS is based on SIMPLE GRID by ZACH COLE 2016 */
+
+/* RESET any default browser styling */
+/* you won't need to change anything here */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  font-size: 100%;
+  overflow-x: hidden;
+}
+
+/* we want images to be 100% width of the column they are in within the grid */
+/* you should not need to edit this */
+
+img{
+  width: auto;
+    height: auto;     /* Maintains the image's aspect ratio */
+    display: block; 
+    max-width: 100%; /* Ensures image fits within the screen */
+}
+
+.uncentered {
+  text-align: center;
+}
+
+.uncentered img {
+  width: auto;
+    height: auto;     /* Maintains the image's aspect ratio */
+    display: block; 
+    max-width: 100%; /* Ensures image fits within the screen */
+    margin: 0 -10px;
+}
+
+.poppins {
+  font-family: 'Poppins', sans-serif;
+  color: #759B7F;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 30px;
+  font-family: 'Fugaz One', serif;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 22px;
+  font-family: 'Fugaz One', serif;
+  color: #615B6E;
+}
+
+h3 {
+   font-size: 24px;
+  font-family: 'Poppins', sans-serif;
+  color:#B8A5C3;
+}
+
+h4 {
+   font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  color:#967EA4;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.875rem;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  margin: 18px 0 18px 0;
+  color: black;
+}
+
+p1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  color: white;
+   text-align: center;
+  display: block;
+  justify-content: center;
+}
+
+* {
+  font-family: 'Fugaz One', serif;
+  color: #759B7F;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* POSITIONING */
+/* add these classes to position an element */
+/* eg: <h1 class="center">A centered title</h1> */
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.justify {
+  text-align: justify;
+}
+
+/* ==== GRID SYSTEM ==== */
+/* don't need to edit anything from here down */
+/* this sets up the responsive grid for you which you can use in your html */
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  position: relative;
+  width: 100%;
+}
+
+.row [class^="col"] {
+  float: left;
+  margin: 0.5rem 2%;
+  min-height: 0.125rem;
+}
+
+.p5-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.banner {
+    width: 100%;
+    height: 500px;
+    background-image: url('img/banner.jpg');
+    background-size: cover;  
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  width: 96%;
+}
+
+.col-1-sm {
+  width: 4.33%;
+}
+
+.col-2-sm {
+  width: 12.66%;
+}
+
+.col-3-sm {
+  width: 21%;
+}
+
+.col-4-sm {
+  width: 29.33%;
+}
+
+.col-5-sm {
+  width: 37.66%;
+}
+
+.col-6-sm {
+  width: 46%;
+}
+
+.col-7-sm {
+  width: 54.33%;
+}
+
+.col-8-sm {
+  width: 62.66%;
+}
+
+.col-9-sm {
+  width: 71%;
+}
+
+.col-10-sm {
+  width: 79.33%;
+}
+
+.col-11-sm {
+  width: 87.66%;
+}
+
+.col-12-sm {
+  width: 96%;
+}
+
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.hidden-sm {
+  display: none;
+}
+
+@media only screen and (min-width: 33.75em) {  /* 540px */
+  .container {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 45em) {  /* 720px */
+  p {
+    font-size: 1rem;
+  }
+
+  .col-1 {
+    width: 4.33%;
+  }
+
+  .col-2 {
+    width: 12.66%;
+  }
+
+  .col-3 {
+    width: 21%;
+  }
+
+  .col-4 {
+    width: 29.33%;
+  }
+
+  .col-5 {
+    width: 37.66%;
+  }
+
+  .col-6 {
+    width: 46%;
+  }
+
+  .col-7 {
+    width: 54.33%;
+  }
+
+  .col-8 {
+    width: 62.66%;
+  }
+
+  .col-9 {
+    width: 71%;
+  }
+
+  .col-10 {
+    width: 79.33%;
+  }
+
+  .col-11 {
+    width: 87.66%;
+  }
+
+  .col-12 {
+    width: 96%;
+  }
+
+  .hidden-sm {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 60em) { /* 960px */
+  p {
+    font-size: 1.1rem;
+  }
+
+  .container {
+    width: 75%;
+    max-width: 60rem;
+  }
+    
+row-container {
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+   
+}
+  
+  .row-container img {
+     width: 100%;               
+    height: auto;
+  }
+  
+    .banner {
+    width: 100vw;
+    height: auto;
+    display: block;
+  }
+}
+
+        /* Thin header bar styling */
+        .header-bar-1 {
+            
+            background-color: #B586CA; 
+                         
+            display: flex;
+            justify-content: space-between;
+            align-items: left;
+            font-size: 20px;           
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+          
+        }
+
+        /* Navigation links */
+        .header-bar-1 a {
+            flex-wrap: nowrap;
+            color: #E9FFEB;
+            text-decoration: none;
+            margin-left: 20px;        /* Spacing between links */   
+        }
+
+        .header-bar-1 a:hover {
+            color: #493758;
+        }
+
+ /* Thin header bar styling */
+        .header-bar-2 {
+            
+            background-color: #B586CA; 
+                     
+            display: flex;
+            align-items: right;
+            font-size: 18px;           
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+          
+        }
+
+        /* Navigation links */
+        .header-bar-2 a {
+            flex-wrap: nowrap;
+            color: #E9FFEB;
+            text-decoration: none;
+            margin-left: 20px;        /* Spacing between links */   
+        }
+
+        .header-bar-2 a:hover {
+            color: #493758;
+        }
+
+.gif-container {
+    display: flex;
+    justify-content: center;  /* Centers the GIF horizontally */
+    align-items: center;      /* Centers vertically if needed (e.g., full page) */
+     margin: 18px 0 18px 0;
+}
+
+.gif-container img {
+    width: 80%;               /* Sets the GIF to 50% of its original size */
+    height: auto;             /* Maintains aspect ratio */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* slider!! */
+
+
+body {
+	background-color: #f8fafc;
+}
+
+.container {
+	padding: 2rem;
+}
+
+.slider-wrapper {
+	position: relative;
+	max-width: 48rem;
+	margin: 0 auto;
+}
+
+.slider {
+	display: flex;
+	aspect-ratio: 4 / 3;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+	border-radius: 0.5rem;
+	-ms-overflow-style: none; /* Hide scrollbar IE and Edge */
+	scrollbar-width: none; /* Hide scrollbar Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.slider::-webkit-scrollbar {
+	display: none;
+}
+
+.slider img {
+	flex: 1 0 100%;
+	scroll-snap-align: start;
+	object-fit: cover;
+}
+
+.slider-nav {
+	display: flex;
+	column-gap: 1rem;
+	position: absolute;
+	bottom: 1.25rem;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+}
+
+.slider-nav a {
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 50%;
+	background-color: #fff;
+	opacity: 0.75;
+	transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+	opacity: 1;
+}
+
+.slider2 {
+	display: flex;
+	aspect-ratio: 5 / 7;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+	border-radius: 0.5rem;
+	-ms-overflow-style: none; /* Hide scrollbar IE and Edge */
+	scrollbar-width: none; /* Hide scrollbar Firefox */
+    text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: 60%;
+}
